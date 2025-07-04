@@ -1,0 +1,164 @@
+# dbtransfer module
+# Translations
+#
+# Part of »Zugzwang Project«
+# https://www.zugzwang.org/modules/dbtransfer
+#
+# @author Gustaf Mossakowski <gustaf@koenige.org>
+# @copyright Copyright © 2025 Gustaf Mossakowski
+# @license http://opensource.org/licenses/lgpl-3.0.html LGPL-3.0
+#
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Project-Id-Version: Zugzwang Project -- dbtransfer module\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: configuration/settings.cfg
+msgid "Condition for query if record is followed from a master record, e. g. restrict to category"
+msgstr ""
+
+#: configuration/settings.cfg
+msgid "List of tables for database export where master relations are not included"
+msgstr ""
+
+#: configuration/settings.cfg
+msgid "List of tables as `table[main_table]` for database export where detail relations are not followed"
+msgstr ""
+
+#: configuration/settings.cfg
+msgid "List of fields and IDs as `table[main_table][field_name]=id_value` for database export where detail relations are not followed""
+msgstr ""
+
+#: configuration/settings.cfg
+msgid "To debug data and avoid inifite recursion, add values in the form `table=id_value` where the script stops if encountering these"
+msgstr ""
+
+#: configuration/settings.cfg
+msgid "List of tables for import where if one value differs, whole record is different"
+msgstr ""
+
+#: configuration/settings.cfg
+msgid "List of field names (`table.field`) where if the values in old and new records differ, whole record is different"
+msgstr ""
+
+#: configuration/settings.cfg
+msgid "List of identifiers that need to be checked for duplicates"
+msgstr ""
+
+#: configuration/settings.cfg
+msgid "Suffix added to existing identifiers to make them unique if identifier already exists"
+msgstr ""
+
+#: configuration/settings.cfg
+msgid "Username used for database logging in zzform"
+msgstr ""
+
+#: templates/dbexport.template.txt
+msgid "The database export was successful."
+msgstr ""
+
+#: templates/dbexport.template.txt
+msgid "The database export of translations was successful, too."
+msgstr ""
+
+#: templates/dbexport.template.txt
+msgid "No record could be found for this data."
+msgstr ""
+
+#: templates/dbexport.template.txt
+msgid "Name of the table"
+msgstr ""
+
+#: templates/dbexport.template.txt
+msgid "Name of the field"
+msgstr ""
+
+#: templates/dbexport.template.txt
+msgid "ID of the record"
+msgstr ""
+
+#: templates/dbimport.template.txt
+msgid "%d record imported."
+msgid_plural "%d records imported."
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/dbimport.template.txt
+msgid "The logfile for import is missing or empty."
+msgstr ""
+
+#: templates/dbimport.template.txt
+msgid "%d entry"
+msgid_plural "%d entries"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/dbimport.template.txt
+msgid "%d matched"
+msgstr ""
+
+#: templates/dbimport.template.txt
+msgid "Delete log for %s"
+msgstr ""
+
+#: templates/dbimport.template.txt
+msgid "Import data for %s"
+msgstr ""
+
+#: templates/dbimport.template.txt
+msgid "Auto increment value: %d"
+msgstr ""
+
+#: templates/dbimport.template.txt
+msgid "Relations"
+msgstr ""
+
+#: templates/dbimport.template.txt
+msgid "Identical records"
+msgstr ""
+
+#: templates/dbimport.template.txt
+msgid "The records are identical."
+msgstr ""
+
+#: templates/dbimport.template.txt
+msgid "None of the records to import are identical."
+msgstr ""
+
+#: templates/dbimport.template.txt
+msgid "Some records are identical."
+msgstr ""
+
+#: templates/dbimport.template.txt
+msgid "Different records: %d"
+msgstr ""
+
+#: templates/dbimport.template.txt
+msgid "Different records logged: %d"
+msgstr ""
+
+#: templates/dbimport.template.txt
+msgid "Record is identical"
+msgstr ""
+
+#: templates/dbimport.template.txt
+msgid "Record is different"
+msgstr ""
+
+#: templates/dbimport.template.txt
+msgid "New records: %d"
+msgstr ""
+
+#: zzbrick_make/dbdelete.inc.php
+msgid "Database Deletions"
+msgstr ""
+
+#: zzbrick_make/dbimport.inc.php
+msgid "– none –"
+msgstr ""
