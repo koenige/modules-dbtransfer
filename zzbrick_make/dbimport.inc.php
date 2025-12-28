@@ -88,7 +88,7 @@ function mod_dbtransfer_dbimport_table($data, $log) {
 	$tabledata = [];
 	$conditions = [];
 	$data['table'] = $_GET['table'];
-	$data['auto_increment'] = wrap_db_increment($data['table']);
+	$data['auto_increment'] = wrap_mysql_increment($data['table']);
 	foreach ($log as $line) {
 		if ($line['table'] !== $data['table']) continue;
 		$tabledata[$line['record_id']] = json_decode($line['record'], true);
@@ -149,7 +149,7 @@ function mod_dbtransfer_dbimport_log($table, $action, $old_record_id = 0, $new_r
 	static $increment = [];
 	static $log = [];
 	if (!array_key_exists($table, $increment))
-		$increment[$table] = wrap_db_increment($table);
+		$increment[$table] = wrap_mysql_increment($table);
 	$logfile = sprintf('dbtransfer/dbimport_ids[%s]', $table);
 	if (!array_key_exists($table, $log))
 		$log[$table] = wrap_file_log($logfile);
@@ -186,7 +186,7 @@ function mod_dbtransfer_dbimport_diff(&$data, $record_id, $record, $record_exist
 	if ($new_record_id === $record_id) {
 		$data['different_logged']++;
 		return;
-	} elseif ($new_record_id >= wrap_db_increment($data['table'])) {
+	} elseif ($new_record_id >= wrap_mysql_increment($data['table'])) {
 		$data['new']++;
 		return;
 	}
